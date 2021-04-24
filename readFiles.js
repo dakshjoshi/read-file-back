@@ -3,7 +3,7 @@ const cors = require("cors");
 const App = express();
 const fs = require("fs");
 const path = require("path");
-
+const PORT = process.env.PORT || 6969;
 //MIDDLE WARE
 App.use(cors());
 
@@ -61,4 +61,6 @@ App.get("/folder", (req, res) => {
 // App.get("/files", (req, res) => {
 //   res.send(files);
 // });
-App.listen(6969);
+App.listen(PORT, () => {
+  console.log(`Server is up and running on port ${PORT}`);
+});
