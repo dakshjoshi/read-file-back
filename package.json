@@ -4,7 +4,7 @@
   "description": "",
   "main": "readFiles.js",
   "scripts": {
-    "state": "node ."
+    "start": "node ."
   },
   "author": "",
   "license": "ISC",
